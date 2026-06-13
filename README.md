@@ -5,8 +5,8 @@ A Laravel package that detects malicious IPs attempting to access sensitive file
 > **Note**: This package is **not** a form honeypot. For form honeypot protection, consider using [spatie/laravel-honeypot](https://github.com/spatie/laravel-honeypot). HoneypotPlus focuses on detecting malicious reconnaissance attempts on sensitive paths like `.env`, `.git`, `wp-admin`, etc.
 
 [![Tests](https://github.com/ilogus/laravel-honeypotplus/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ilogus/laravel-honeypotplus/actions?query=workflow%3ATests+branch%3Amain)
-[![Coverage](https://codecov.io/gh/ilogus/Laravel-HoneypotPlus/branch/main/graph/badge.svg)](https://codecov.io/gh/ilogus/Laravel-HoneypotPlus)
-[![License](https://img.shields.io/github/license/ilogus/Laravel-HoneypotPlus)](https://github.com/ilogus/laravel-honeypotplus/blob/main/LICENSE)
+[![Coverage](https://codecov.io/gh/ilogus/laravel-honeypotplus/branch/main/graph/badge.svg)](https://codecov.io/gh/ilogus/laravel-honeypotplus)
+[![License](https://img.shields.io/github/license/ilogus/laravel-honeypotplus)](https://github.com/ilogus/laravel-honeypotplus/blob/main/LICENSE)
 
 ## Features
 
