@@ -4,9 +4,9 @@ A Laravel package that detects malicious IPs attempting to access sensitive file
 
 > **Note**: This package is **not** a form honeypot. For form honeypot protection, consider using [spatie/laravel-honeypot](https://github.com/spatie/laravel-honeypot). HoneypotPlus focuses on detecting malicious reconnaissance attempts on sensitive paths like `.env`, `.git`, `wp-admin`, etc.
 
-[![Tests](https://github.com/ilogus/Laravel-HoneypotPlus/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ilogus/Laravel-HoneypotPlus/actions?query=workflow%3ATests+branch%3Amain)
+[![Tests](https://github.com/ilogus/laravel-honeypotplus/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ilogus/laravel-honeypotplus/actions?query=workflow%3ATests+branch%3Amain)
 [![Coverage](https://codecov.io/gh/ilogus/Laravel-HoneypotPlus/branch/main/graph/badge.svg)](https://codecov.io/gh/ilogus/Laravel-HoneypotPlus)
-[![License](https://img.shields.io/github/license/ilogus/Laravel-HoneypotPlus)](https://github.com/ilogus/Laravel-HoneypotPlus/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/ilogus/Laravel-HoneypotPlus)](https://github.com/ilogus/laravel-honeypotplus/blob/main/LICENSE)
 
 ## Features
 
@@ -258,10 +258,10 @@ HoneypotPlus is open-source software licensed under the [MIT license](LICENSE).
 
 ## Credits
 
-- [All Contributors](https://github.com/ilogus/Laravel-HoneypotPlus/graphs/contributors)
+- [All Contributors](https://github.com/ilogus/laravel-honeypotplus/graphs/contributors)
 
 ## Support
 
-- [Documentation](https://github.com/ilogus/Laravel-HoneypotPlus)
-- [Issues](https://github.com/ilogus/Laravel-HoneypotPlus/issues)
-- [Discussions](https://github.com/ilogus/Laravel-HoneypotPlus/discussions)
+- [Documentation](https://github.com/ilogus/laravel-honeypotplus)
+- [Issues](https://github.com/ilogus/laravel-honeypotplus/issues)
+- [Discussions](https://github.com/ilogus/laravel-honeypotplus/discussions)

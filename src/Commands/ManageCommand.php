@@ -65,8 +65,8 @@ final class ManageCommand extends Command
         $this->newLine();
         $this->line('<fg=green;options=bold>Laravel HoneypotPlus</>');
         $this->newLine();
-        $this->line('  <fg=blue>https://github.com/ilogus/Laravel-HoneypotPlus</>');
-        $this->line('  <fg=gray>Found a bug? Open an issue: https://github.com/ilogus/Laravel-HoneypotPlus/issues</>');
+        $this->line('  <fg=blue>https://github.com/ilogus/laravel-honeypotplus</>');
+        $this->line('  <fg=gray>Found a bug? Open an issue: https://github.com/ilogus/laravel-honeypotplus/issues</>');
         $this->newLine();
     }
 

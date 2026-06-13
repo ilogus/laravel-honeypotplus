@@ -10,10 +10,10 @@
     ],
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/ilogus/Laravel-HoneypotPlus",
+    "homepage": "https://github.com/ilogus/laravel-honeypotplus",
     "support": {
-        "issues": "https://github.com/ilogus/Laravel-HoneypotPlus/issues",
-        "source": "https://github.com/ilogus/Laravel-HoneypotPlus"
+        "issues": "https://github.com/ilogus/laravel-honeypotplus/issues",
+        "source": "https://github.com/ilogus/laravel-honeypotplus"
     },
     "authors": [
         {

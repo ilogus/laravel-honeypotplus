@@ -20,5 +20,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for Laravel 12.x and 13.x
 - Support for PHP 8.3, 8.4 and 8.5
 
-[Unreleased]: https://github.com/ilogus/Laravel-HoneypotPlus/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/ilogus/Laravel-HoneypotPlus/releases/tag/v1.0.0
+[Unreleased]: https://github.com/ilogus/laravel-honeypotplus/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/ilogus/laravel-honeypotplus/releases/tag/v1.0.0

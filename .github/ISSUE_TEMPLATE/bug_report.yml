@@ -4,8 +4,8 @@ body:
   - type: markdown
     attributes:
       value: |
-          Before creating a new Bug Report, please check that there isn't already a similar issue on [the issue tracker](https://github.com/ilogus/Laravel-HoneypotPlus/issues) or in [the discussions](https://github.com/ilogus/Laravel-HoneypotPlus/discussions).
-          Also, **many issues/questions/problems are already answered** in the [README](https://github.com/ilogus/Laravel-HoneypotPlus#readme) already. **Please be sure to check the docs** because it will save you time!
+          Before creating a new Bug Report, please check that there isn't already a similar issue on [the issue tracker](https://github.com/ilogus/laravel-honeypotplus/issues) or in [the discussions](https://github.com/ilogus/laravel-honeypotplus/discussions).
+          Also, **many issues/questions/problems are already answered** in the [README](https://github.com/ilogus/laravel-honeypotplus#readme) already. **Please be sure to check the docs** because it will save you time!
 
   - type: textarea
     attributes:
