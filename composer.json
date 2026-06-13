@@ -1,0 +1,74 @@
+{
+    "name": "ilogus/laravel-honeypotplus",
+    "description": "Laravel package to detect malicious IPs, ban them via Cloudflare, and report to AbuseIPDB",
+    "keywords": [
+        "laravel",
+        "honeypot",
+        "security",
+        "cloudflare",
+        "abuseipdb"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/ilogus/Laravel-HoneypotPlus",
+    "support": {
+        "issues": "https://github.com/ilogus/Laravel-HoneypotPlus/issues",
+        "source": "https://github.com/ilogus/Laravel-HoneypotPlus"
+    },
+    "authors": [
+        {
+            "name": "IloGus",
+            "email": "contact@ilogus.dev"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^11.54|^12.0|^13.0",
+        "illuminate/http": "^11.54|^12.0|^13.0",
+        "illuminate/console": "^11.54|^12.0|^13.0",
+        "illuminate/events": "^11.54|^12.0|^13.0",
+        "illuminate/queue": "^11.54|^12.0|^13.0",
+        "illuminate/database": "^11.54|^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^2.0|^3.0|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0|^5.0",
+        "laravel/pint": "^1.29"
+    },
+    "autoload": {
+        "psr-4": {
+            "HoneypotPlus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HoneypotPlus\\Tests\\": "tests/",
+            "HoneypotPlus\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest --colors=always",
+        "test-coverage": "vendor/bin/pest --coverage-html coverage",
+        "pint": "vendor/bin/pint",
+        "pint-test": "vendor/bin/pint --test"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HoneypotPlus\\HoneypotPlusServiceProvider"
+            ],
+            "aliases": {
+                "HoneypotPlus": "HoneypotPlus\\Facades\\HoneypotPlus"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

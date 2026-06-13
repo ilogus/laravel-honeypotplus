@@ -1,0 +1,10 @@
+coverage/
+coverage.xml
+vendor/
+node_modules/
+composer.phar
+phpunit-report.xml
+.composer-cache/
+.graphify/
+.graphify-out/
+.idea/

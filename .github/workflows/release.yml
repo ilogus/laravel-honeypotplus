@@ -1,0 +1,55 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate changelog
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          CURRENT_TAG=${GITHUB_REF#refs/tags/}
+          PREV_TAG=$(git tag --sort=-creatordate | grep -v "$CURRENT_TAG" | head -n 1)
+
+          echo "### Changes since $PREV_TAG" > changelog.md
+          echo "" >> changelog.md
+
+          if [ -z "$PREV_TAG" ]; then
+            git log --pretty=format:"%H|%s" > /tmp/commits.txt
+          else
+            git log ${PREV_TAG}..HEAD --pretty=format:"%H|%s" > /tmp/commits.txt
+          fi
+
+          echo "" >> /tmp/commits.txt
+
+          while IFS='|' read -r sha subject; do
+            if [ -n "$sha" ]; then
+              author=$(gh api "repos/${{ github.repository }}/commits/$sha" --jq '.author.login' 2>/dev/null || echo "unknown")
+              echo "- [$subject](https://github.com/${{ github.repository }}/commit/$sha) by @$author" >> changelog.md
+            fi
+          done < /tmp/commits.txt
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          body_path: changelog.md
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
