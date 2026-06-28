@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="art/laravel-honeypot-plus.svg" alt="HoneypotPlus logo" width="450">
+</p>
+
 # HoneypotPlus for Laravel
 
 A Laravel package that detects malicious IPs attempting to access sensitive files/paths, bans them via Cloudflare, reports them to AbuseIPDB, and provides an interactive CLI management interface.
